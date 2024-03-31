@@ -78,11 +78,6 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.SUBARU_LEGACY_PREGLOBAL:
       ret.steerActuatorDelay = 0.15
 
-    elif candidate == CAR.SUBARU_OUTBACK_PREGLOBAL:
-      pass
-    else:
-      raise ValueError(f"unknown car: {candidate}")
-
     ret.experimentalLongitudinalAvailable = not (ret.flags & (SubaruFlags.GLOBAL_GEN2 | SubaruFlags.PREGLOBAL |
                                                               SubaruFlags.LKAS_ANGLE | SubaruFlags.HYBRID))
     ret.openpilotLongitudinalControl = experimental_long and ret.experimentalLongitudinalAvailable

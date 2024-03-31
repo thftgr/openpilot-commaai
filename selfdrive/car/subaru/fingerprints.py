@@ -550,4 +550,20 @@ FW_VERSIONS = {
       b'\xa8\xfe\xf41\x00',
     ],
   },
+  CAR.SUBARU_CROSSTREK_2024: {
+    (Ecu.abs, 0x7b0, None): [
+      b'\xa2 $\x18\x03',
+    ],
+    (Ecu.eps, 0x746, None): [
+      b'*\xd0\x00\n\x03',
+    ],
+    (Ecu.fwdCamera, 0x787, None): [
+      b'\n!\x08\x036\x00\x00\x00\x00\x00',
+    ],
+    (Ecu.engine, 0x7a2, None): [
+      b'\xe8"ap\x07',
+    ],
+    (Ecu.transmission, 0x7a3, None): [
+    ],
+  },
 }
